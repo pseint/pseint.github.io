@@ -409,7 +409,7 @@
 
                 // 3) Mostrar toast (dura ~3.5s en pantalla)
                 showToast(
-                    ok ? `✅ Link copiado · ${label}` : `🔗 Preparando ${label}`,
+                    ok ? `✅ Link copiado, verifica bloqueo del navegador · ${label}` : `🔗 Preparando ${label}`,
                     url,
                     3500
                 );
@@ -421,7 +421,7 @@
                     // Si el navegador bloquea el popup, mostramos un toast secundario
                     if(!w){
                         showToast(
-                            `⚠️ Pega el link en tu navegador`,
+                            `⚠️ Pega el link en tu navegador en una pestaña nueva`,
                             url,
                             5000
                         );
