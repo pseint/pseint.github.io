@@ -409,24 +409,24 @@
 
                 // 3) Mostrar toast (dura ~3.5s en pantalla)
                 showToast(
-                    ok ? `✅ Link copiado, verifica bloqueo del navegador · ${label}` : `🔗 Preparando ${label}`,
+                    ok ? `✅ Link copiado, verifica bloqueo del navegador · ${label}` : `🔗Pega el link en una pestaña nueva ${label}`,
                     url,
-                    3500
+                    2500
                 );
 
                 // 4) Esperar para que el usuario lea el mensaje y LUEGO abrir en nueva pestaña
                 //    (Chrome puede decidir si abre la app de Play Store o el navegador)
-                setTimeout(()=>{
-                    const w = window.open(url, '_blank', 'noopener,noreferrer');
-                    // Si el navegador bloquea el popup, mostramos un toast secundario
-                    if(!w){
+                //setTimeout(()=>{
+                //    const w = window.open(url, '_blank', 'noopener,noreferrer');
+                // Si el navegador bloquea el popup, mostramos un toast secundario
+                 //   if(!w){
                         showToast(
                             `⚠️ Pega el link en tu navegador en una pestaña nueva`,
                             url,
                             5000
                         );
-                    }
-                }, 5000); // 1.8s para leer el toast antes de abrir
+                 //   }
+                // }, 10000); // 1.8s para leer el toast antes de abrir
             });
         });
     </script>
