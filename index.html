@@ -2,26 +2,251 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descarga PsDroid, el intérprete oficial de PSeInt para Android. Aprende lógica de programación y algoritmos de forma ultra ligera y rápida en tu móvil.">
-    <meta name="keywords" content="PsDroid, PSeInt Android, programar en android, pseudocódigo, algoritmos, aprender programación">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0d1117">
+    <meta name="color-scheme" content="dark">
+
+    <!-- SEO PRIMARIO -->
+    <title>PsDroid | PSeInt para Android – Programa, crea y domina la lógica 🚀</title>
+    <meta name="description" content="PsDroid es el intérprete oficial de PSeInt para Android. Ultra ligero, rápido y gratis. Aprende lógica de programación, pseudocódigo y algoritmos desde tu móvil. Descárgalo hoy.">
+    <meta name="keywords" content="PsDroid, PSeInt Android, PSeInt móvil, programar en Android, pseudocódigo, algoritmos, aprender a programar, lógica de programación, app educativa">
+    <meta name="author" content="PsDroid">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://pseint.github.io/">
+
+    <!-- Google Search Console -->
     <meta name="google-site-verification" content="XUGR6_lMsasKqXhW4NybVqUyvlKrvXRLpzomF4Bjca4" />
 
-    <title>PsDroid | PSeInt para Android - Oficial</title>
-    
-    <link rel="icon" type="image/png" href="https://play-lh.googleusercontent.com/I6PZpT0xP-3Q_W7T-C7XG_9g9-T8-mN6z_g8B1_XJ">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="PsDroid">
+    <meta property="og:url" content="https://pseint.github.io/">
+    <meta property="og:title" content="PsDroid | PSeInt para Android – Programa desde tu móvil 🚀">
+    <meta property="og:description" content="El intérprete oficial de PSeInt para Android. Ultra ligero, rápido y gratis. Aprende lógica, pseudocódigo y algoritmos.">
+    <meta property="og:image" content="https://play-lh.googleusercontent.com/SS9BKIx0Iipub4FsKsjbzDXFTErTsh8Wx2TmjVgvD5XOGLko0HOIyusnzIU4aJdgahs-Xe5T4csvdJ2k2o30=w512-h512-rw">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PsDroid | PSeInt para Android">
+    <meta name="twitter:description" content="Aprende lógica de programación y pseudocódigo desde tu Android. Gratis y oficial.">
+    <meta name="twitter:image" content="https://play-lh.googleusercontent.com/SS9BKIx0Iipub4FsKsjbzDXFTErTsh8Wx2TmjVgvD5XOGLko0HOIyusnzIU4aJdgahs-Xe5T4csvdJ2k2o30=w512-h512-rw">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://play-lh.googleusercontent.com/SS9BKIx0Iipub4FsKsjbzDXFTErTsh8Wx2TmjVgvD5XOGLko0HOIyusnzIU4aJdgahs-Xe5T4csvdJ2k2o30=w96-h96-rw">
+    <link rel="apple-touch-icon" href="https://play-lh.googleusercontent.com/SS9BKIx0Iipub4FsKsjbzDXFTErTsh8Wx2TmjVgvD5XOGLko0HOIyusnzIU4aJdgahs-Xe5T4csvdJ2k2o30=w180-h180-rw">
 
     <style>
-        :root { --accent: #4CAF50; --bg: #0d1117; --card: #161b22; --text: #c9d1d9; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; display: flex; align-items: center; justify-content: center; min-height: 100vh; overflow: hidden; }
-        .container { text-align: center; background: var(--card); padding: 40px; border-radius: 24px; border: 1px solid #30363d; box-shadow: 0 20px 50px rgba(0,0,0,0.5); max-width: 350px; transform: translateY(0); animation: fadeIn 0.8s ease-out; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        .icon { width: 96px; height: 96px; border-radius: 20%; margin-bottom: 20px; box-shadow: 0 8px 16px rgba(0,0,0,0.3); }
-        h1 { font-size: 2rem; margin: 10px 0; color: #fff; letter-spacing: -0.5px; }
-        p { font-size: 1rem; line-height: 1.5; margin-bottom: 30px; opacity: 0.9; }
-        .btn { background: var(--accent); color: #fff; text-decoration: none; padding: 16px 32px; border-radius: 12px; font-weight: 700; display: block; transition: all 0.3s ease; font-size: 1.1rem; }
-        .btn:hover { background: #45a049; transform: scale(1.03); box-shadow: 0 0 20px rgba(76, 175, 80, 0.4); }
-        .footer-link { margin-top: 20px; font-size: 0.8rem; display: block; color: #8b949e; text-decoration: none; }
+        :root{
+            --bg-0:#07080d;
+            --bg-1:#0d1117;
+            --card:rgba(22,27,34,0.55);
+            --stroke:rgba(255,255,255,0.08);
+            --text:#e6edf3;
+            --muted:#9aa4b2;
+            --accent:#a3ff57;
+            --accent-2:#22d3ee;
+            --accent-3:#c084fc;
+            --grad: linear-gradient(135deg,#a3ff57 0%, #22d3ee 50%, #c084fc 100%);
+            --shadow:0 30px 80px rgba(0,0,0,.55);
+        }
+        *{box-sizing:border-box}
+        html,body{margin:0;padding:0}
+        body{
+            font-family:"Inter","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+            background:var(--bg-0);
+            color:var(--text);
+            min-height:100dvh;
+            display:flex;align-items:center;justify-content:center;
+            padding:24px;
+            overflow-x:hidden;
+            -webkit-font-smoothing:antialiased;
+            position:relative;
+        }
+
+        /* Fondo animado con blobs (Gen Z aesthetic) */
+        .bg{
+            position:fixed;inset:0;z-index:-2;
+            background:
+                radial-gradient(1200px 600px at 10% -10%, rgba(163,255,87,.18), transparent 60%),
+                radial-gradient(900px 600px at 110% 10%, rgba(34,211,238,.18), transparent 60%),
+                radial-gradient(900px 600px at 50% 120%, rgba(192,132,252,.20), transparent 60%),
+                var(--bg-0);
+        }
+        .grain{
+            position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
+            background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.6'/></svg>");
+        }
+        .blob{position:fixed;width:520px;height:520px;border-radius:50%;filter:blur(90px);z-index:-1;opacity:.55;animation:float 16s ease-in-out infinite}
+        .blob.a{background:#a3ff57;top:-160px;left:-160px}
+        .blob.b{background:#22d3ee;bottom:-200px;right:-180px;animation-delay:-6s}
+        .blob.c{background:#c084fc;top:40%;left:60%;width:360px;height:360px;animation-delay:-10s}
+        @keyframes float{
+            0%,100%{transform:translate(0,0) scale(1)}
+            50%{transform:translate(30px,-40px) scale(1.08)}
+        }
+
+        /* Card glassmorphism */
+        .container{
+            position:relative;
+            width:100%;max-width:440px;
+            padding:36px 28px 28px;
+            border-radius:28px;
+            background:var(--card);
+            border:1px solid var(--stroke);
+            backdrop-filter: blur(22px) saturate(140%);
+            -webkit-backdrop-filter: blur(22px) saturate(140%);
+            box-shadow:var(--shadow);
+            animation: rise .9s cubic-bezier(.2,.8,.2,1) both;
+            overflow:hidden;
+        }
+        .container::before{
+            content:"";position:absolute;inset:0;border-radius:28px;padding:1px;
+            background:var(--grad);
+            -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+            -webkit-mask-composite:xor;mask-composite:exclude;
+            opacity:.55;pointer-events:none;
+        }
+        @keyframes rise{from{opacity:0;transform:translateY(28px) scale(.98)}to{opacity:1;transform:none}}
+
+        .badge{
+            display:inline-flex;align-items:center;gap:8px;
+            font-size:.78rem;font-weight:600;letter-spacing:.3px;
+            padding:6px 12px;border-radius:999px;
+            background:rgba(163,255,87,.10);
+            color:var(--accent);
+            border:1px solid rgba(163,255,87,.25);
+            margin-bottom:18px;
+        }
+        .badge .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent);animation:pulse 1.6s infinite}
+        @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.85)}}
+
+        .icon-wrap{
+            position:relative;width:108px;height:108px;margin:0 auto 18px;
+        }
+        .icon-wrap::after{
+            content:"";position:absolute;inset:-8px;border-radius:28px;
+            background:var(--grad);filter:blur(22px);opacity:.55;z-index:-1;
+        }
+        .icon{
+            width:108px;height:108px;border-radius:26%;
+            box-shadow:0 12px 30px rgba(0,0,0,.45);
+            display:block;
+        }
+
+        h1{
+            font-size:clamp(2rem,6vw,2.4rem);
+            margin:6px 0 6px;
+            font-weight:800;letter-spacing:-1px;
+            background:var(--grad);
+            -webkit-background-clip:text;background-clip:text;color:transparent;
+            text-align:center;
+        }
+        .subtitle{
+            text-align:center;font-size:1rem;line-height:1.55;
+            color:var(--muted);margin:0 auto 22px;max-width:36ch;
+        }
+        .subtitle strong{color:var(--text)}
+
+        /* Stats bento */
+        .stats{
+            display:grid;grid-template-columns:repeat(3,1fr);gap:8px;
+            margin:0 0 22px;
+        }
+        .stat{
+            background:rgba(255,255,255,.03);
+            border:1px solid var(--stroke);
+            border-radius:14px;padding:10px 6px;text-align:center;
+        }
+        .stat b{display:block;font-size:1.05rem;color:#fff;font-weight:700}
+        .stat span{font-size:.7rem;color:var(--muted);letter-spacing:.4px;text-transform:uppercase}
+
+        .btn{
+            position:relative;
+            display:flex;align-items:center;justify-content:center;gap:10px;
+            padding:16px 22px;border-radius:16px;
+            font-weight:700;font-size:1.05rem;
+            text-decoration:none;color:#0b0f0a;
+            background:var(--grad);background-size:200% 200%;
+            box-shadow:0 10px 30px rgba(163,255,87,.25), 0 0 0 1px rgba(255,255,255,.08) inset;
+            transition:transform .25s ease, box-shadow .25s ease, background-position .6s ease;
+            animation:shine 6s ease infinite;
+        }
+        @keyframes shine{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+        .btn:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(34,211,238,.35)}
+        .btn:active{transform:translateY(0)}
+        .btn svg{width:22px;height:22px}
+
+        .secondary{
+            margin-top:12px;
+            display:flex;align-items:center;justify-content:center;gap:8px;
+            padding:14px 18px;border-radius:14px;
+            text-decoration:none;color:var(--text);font-weight:600;font-size:.95rem;
+            background:rgba(255,255,255,.04);
+            border:1px solid var(--stroke);
+            transition:background .25s ease, border-color .25s ease, transform .25s ease;
+        }
+        .secondary:hover{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.18);transform:translateY(-1px)}
+        .secondary svg{width:18px;height:18px;opacity:.85}
+
+        .quote{
+            margin-top:22px;text-align:center;font-size:.85rem;color:var(--muted);
+            font-style:italic;line-height:1.5;
+        }
+        .quote::before{content:"“";color:var(--accent);font-size:1.6rem;line-height:0;vertical-align:-6px;margin-right:4px}
+        .quote::after{content:"”";color:var(--accent-3);font-size:1.6rem;line-height:0;vertical-align:-6px;margin-left:4px}
+
+        footer{
+            margin-top:18px;text-align:center;font-size:.72rem;color:#6e7681;
+        }
+        footer a{color:#8b949e;text-decoration:none;border-bottom:1px dashed #30363d}
+        footer a:hover{color:var(--accent-2)}
+
+        @media (prefers-reduced-motion: reduce){
+            .blob,.btn,.container,.badge .dot{animation:none!important}
+        }
+
+        /* Toast moderno (Gen Z 2026) */
+        .toast-wrap{
+            position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(40px);
+            z-index:9999;pointer-events:none;
+            display:flex;align-items:center;gap:12px;
+            padding:14px 18px;border-radius:16px;
+            background:rgba(13,17,23,.85);
+            border:1px solid rgba(255,255,255,.10);
+            backdrop-filter:blur(20px) saturate(160%);
+            -webkit-backdrop-filter:blur(20px) saturate(160%);
+            box-shadow:0 20px 60px rgba(0,0,0,.55), 0 0 0 1px rgba(163,255,87,.15);
+            color:#e6edf3;font-size:.92rem;font-weight:600;
+            opacity:0;transition:opacity .35s ease, transform .45s cubic-bezier(.2,.8,.2,1);
+            max-width:min(92vw,420px);
+        }
+        .toast-wrap.show{opacity:1;transform:translateX(-50%) translateY(0)}
+        .toast-wrap .ico{
+            width:34px;height:34px;flex-shrink:0;
+            display:flex;align-items:center;justify-content:center;
+            border-radius:10px;
+            background:linear-gradient(135deg,#a3ff57,#22d3ee);
+            color:#0b0f0a;
+        }
+        .toast-wrap .ico svg{width:18px;height:18px}
+        .toast-wrap .txt{display:flex;flex-direction:column;line-height:1.2;min-width:0}
+        .toast-wrap .txt b{color:#fff;font-size:.95rem;margin-bottom:2px}
+        .toast-wrap .txt small{color:#9aa4b2;font-weight:500;font-size:.78rem;
+            overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:280px}
+        .toast-wrap .bar{
+            position:absolute;left:0;bottom:0;height:3px;width:100%;
+            border-radius:0 0 16px 16px;overflow:hidden;
+        }
+        .toast-wrap .bar::after{
+            content:"";display:block;height:100%;width:100%;
+            background:linear-gradient(90deg,#a3ff57,#22d3ee,#c084fc);
+            transform-origin:left;
+            animation:shrink var(--toast-dur, 2400ms) linear forwards;
+        }
+        @keyframes shrink{from{transform:scaleX(1)}to{transform:scaleX(0)}}
     </style>
 
     <script type="application/ld+json">
@@ -31,20 +256,179 @@
       "name": "PsDroid - PSeInt Android",
       "operatingSystem": "ANDROID",
       "applicationCategory": "EducationApplication",
-      "url": "https://cloudservicesai.github.io/pseint.github.io/",
+      "url": "https://pseint.github.io/",
       "softwareVersion": "latest",
+      "description": "Intérprete oficial de PSeInt para Android. Aprende lógica de programación y pseudocódigo desde tu móvil.",
+      "image": "https://play-lh.googleusercontent.com/SS9BKIx0Iipub4FsKsjbzDXFTErTsh8Wx2TmjVgvD5XOGLko0HOIyusnzIU4aJdgahs-Xe5T4csvdJ2k2o30=w512-h512-rw",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-      "installUrl": "https://play.google.com/store/apps/details?id=com.pseint.android"
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.6", "ratingCount": "1200" },
+      "installUrl": "https://play.google.com/store/apps/details?id=com.pseint.android",
+      "publisher": {
+        "@type": "Organization",
+        "name": "PsDroid",
+        "url": "https://pseint.github.io/"
+      }
     }
     </script>
 </head>
 <body>
-    <div class="container">
-        <img src="https://play-lh.googleusercontent.com/SS9BKIx0Iipub4FsKsjbzDXFTErTsh8Wx2TmjVgvD5XOGLko0HOIyusnzIU4aJdgahs-Xe5T4csvdJ2k2o30=w240-h480-rw" alt="PsDroid Icon" class="icon">
+    <div class="bg" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="blob a" aria-hidden="true"></div>
+    <div class="blob b" aria-hidden="true"></div>
+    <div class="blob c" aria-hidden="true"></div>
+
+    <main class="container" role="main">
+        <div style="text-align:center">
+            <span class="badge"><span class="dot"></span> Nuevo · Versión 2026</span>
+        </div>
+
+        <div class="icon-wrap">
+            <img src="https://play-lh.googleusercontent.com/SS9BKIx0Iipub4FsKsjbzDXFTErTsh8Wx2TmjVgvD5XOGLko0HOIyusnzIU4aJdgahs-Xe5T4csvdJ2k2o30=w240-h480-rw" alt="Ícono de PsDroid" class="icon" loading="eager" decoding="async">
+        </div>
+
         <h1>PsDroid</h1>
-        <p>Domina la lógica de programación y PSeInt directamente en tu dispositivo Android. Rápido, ligero y potente.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.pseint.android&hl=es_PE" class="btn">Instalar desde Play Store</a>
-        <a href="https://hotmart.com/es/club/pseint/community/15276363" class="footer-link">Hola 😊, Visitanos nuestra comunidad PsDroid! 🏆🌟💻🎁🎉</a>
-    </div>
-</body>
+        <p class="subtitle">
+            Convierte tu móvil en una <strong>máquina de crear código</strong>.<br>
+            Aprende lógica, pseudocódigo y algoritmos con la app que <strong>desbloquea tu mente dev</strong>. ⚡
+        </p>
+
+        <div class="stats" aria-label="Estadísticas de la app">
+            <div class="stat"><b>100K+</b><span>Descargas</span></div>
+            <div class="stat"><b>4.6 ★</b><span>Valoración</span></div>
+            <div class="stat"><b>Free</b><span>Para siempre</span></div>
+        </div>
+
+        <a href="https://play.google.com/store/apps/details?id=com.pseint.android&hl=es_PE"
+           class="btn"
+           target="_blank"
+           rel="noopener noreferrer"
+           data-copy="Play Store"
+           aria-label="Instalar PsDroid desde Google Play Store (se abre en una nueva pestaña)">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M3.6 2.3C3.2 2.6 3 3.1 3 3.7v16.6c0 .6.2 1.1.6 1.4l9.3-9.7L3.6 2.3Z" fill="#0b0f0a"/>
+                <path d="m14.2 13 2.6 2.7-10 5.7c-.5.3-1 .3-1.4.1L14.2 13Z" fill="#0b0f0a"/>
+                <path d="M19.9 10.5c.8.5.8 1.8 0 2.3l-3.3 1.9-2.9-3 2.9-3 3.3 1.8Z" fill="#0b0f0a"/>
+                <path d="m14.2 11-8.8-9c.4-.2.9-.2 1.4.1l10 5.7L14.2 11Z" fill="#0b0f0a"/>
+            </svg>
+            Instalar desde Play Store
+        </a>
+
+        <a href="https://hotmart.com/es/club/pseint/community/15276363"
+           class="secondary"
+           target="_blank"
+           rel="noopener noreferrer"
+           data-copy="Comunidad PsDroid"
+           aria-label="Unirse a la comunidad PsDroid (se abre en una nueva pestaña)">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M17 11a5 5 0 1 0-10 0 5 5 0 0 0 10 0Z" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M3 21c.7-3.5 4-6 9-6s8.3 2.5 9 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            Únete a nuestra comunidad 🏆
+        </a>
+
+        <p class="quote">El mejor momento para empezar a programar fue ayer. El segundo mejor es ahora.</p>
+
+        <footer>
+            © <span id="y"></span> PsDroid · Hecho con 💚 para la nueva generación dev ·
+            <a href="https://pseint.github.io/" target="_blank" rel="noopener noreferrer">Sitio oficial</a>
+        </footer>
+    </main>
+
+    <script>
+        // Año dinámico
+        document.getElementById('y').textContent = new Date().getFullYear();
+
+        // Seguridad extra: forzar target=_blank y rel seguro a todos los <a> externos
+        document.querySelectorAll('a[href^="http"]').forEach(a=>{
+            a.target = '_blank';
+            a.rel = 'noopener noreferrer';
+        });
+
+        // ====== Toast moderno + copia al portapapeles ======
+        function showToast(title, url, duration = 2400){
+            // Elimina toast previo si existe
+            const prev = document.querySelector('.toast-wrap');
+            if(prev) prev.remove();
+
+            const t = document.createElement('div');
+            t.className = 'toast-wrap';
+            t.setAttribute('role','status');
+            t.setAttribute('aria-live','polite');
+            // Ajustamos la duración de la barra de progreso al tiempo total
+            t.style.setProperty('--toast-dur', duration + 'ms');
+            t.innerHTML = `
+                <div class="ico" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="txt">
+                    <b>${title}</b>
+                    <small>${url}</small>
+                </div>
+                <div class="bar"></div>
+            `;
+            document.body.appendChild(t);
+            requestAnimationFrame(()=>t.classList.add('show'));
+            setTimeout(()=>{
+                t.classList.remove('show');
+                setTimeout(()=>t.remove(), 400);
+            }, duration);
+        }
+
+        async function copyLink(url){
+            try{
+                if(navigator.clipboard && window.isSecureContext){
+                    await navigator.clipboard.writeText(url);
+                }else{
+                    // Fallback
+                    const ta = document.createElement('textarea');
+                    ta.value = url; ta.style.position='fixed'; ta.style.opacity='0';
+                    document.body.appendChild(ta); ta.select();
+                    document.execCommand('copy'); ta.remove();
+                }
+                return true;
+            }catch(e){ return false; }
+        }
+
+        // Listener para los botones: copia el link, vibra, muestra toast varios segundos y LUEGO abre en pestaña nueva
+        document.querySelectorAll('a[data-copy]').forEach(a=>{
+            a.addEventListener('click', async (e)=>{
+                e.preventDefault(); // Detenemos la apertura inmediata
+                const url = a.getAttribute('href');
+                const label = a.getAttribute('data-copy');
+
+                // 1) Copiar al portapapeles
+                const ok = await copyLink(url);
+
+                // 2) Vibración háptica (móviles que lo soporten)
+                if(navigator.vibrate){
+                    try{ navigator.vibrate([15, 40, 25]); }catch(_){}
+                }
+
+                // 3) Mostrar toast (dura ~3.5s en pantalla)
+                showToast(
+                    ok ? `✅ Link copiado · ${label}` : `🔗 Preparando ${label}`,
+                    url,
+                    3500
+                );
+
+                // 4) Esperar para que el usuario lea el mensaje y LUEGO abrir en nueva pestaña
+                //    (Chrome puede decidir si abre la app de Play Store o el navegador)
+                setTimeout(()=>{
+                    const w = window.open(url, '_blank', 'noopener,noreferrer');
+                    // Si el navegador bloquea el popup, mostramos un toast secundario
+                    if(!w){
+                        showToast(
+                            `⚠️ Pega el link en tu navegador`,
+                            url,
+                            5000
+                        );
+                    }
+                }, 1800); // 1.8s para leer el toast antes de abrir
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0beb08c0e57e53a',t:'MTc4MTQ5NjI1NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
